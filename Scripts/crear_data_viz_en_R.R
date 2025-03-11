@@ -11,7 +11,7 @@ View(penguins)
 
 ggplot(data = penguins)+
   geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
-  labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of Three Penguin Species") #con la funicón labs() podemos agregar título, subtítulo y leyendas
+  labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of Three Penguin Species", caption="Data collected by Dr. Kristen Gorman") #con la funicón labs() podemos agregar título, subtítulo y leyendas
 
 #DESCRIPCIÓN DEL CÓDIGO ANTERIOR
 #ggplot(data=penguins) para especificar el df a utilizar
