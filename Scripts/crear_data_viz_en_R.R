@@ -12,6 +12,13 @@ View(penguins)
 ggplot(data = penguins)+
   geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
   labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of Three Penguin Species", caption="Data collected by Dr. Kristen Gorman") #con la funicón labs() podemos agregar título, subtítulo y leyendas
+  annotate("text", x=220, y=3500, label="The Gentoos are the largest", color="blue", fontface="bold", size=4.5)
+
+#CREAMOS UNA VARIABLE QUE ABARQUE TODO EL CÓDIGO ANTERIOR
+scatterplot_penguin <- ggplot(data = penguins)+
+  geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
+  labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of Three Penguin Species", caption="Data collected by Dr. Kristen Gorman")+
+  annotate("text", x=220, y=3500, label="The Gentoos are the largest", color="blue", fontface="bold", size=4.5)
 
 #DESCRIPCIÓN DEL CÓDIGO ANTERIOR
 #ggplot(data=penguins) para especificar el df a utilizar
